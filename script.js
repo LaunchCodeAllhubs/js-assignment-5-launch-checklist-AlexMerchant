@@ -9,13 +9,13 @@ window.addEventListener("load", function() {
     const cargoMassInput = launchForm.elements["cargoMass"];
 
     // TODO: Create variable to grab "list" per instructions; probably the whole <ol> in the #faultyItems div
-    const faultyItemsList = document.querySelector("ol");
+    const faultyItemsList = document.getElementById("faultyItems");
 
     console.log(launchForm);
     console.log(submitBtn);
 
     submitBtn.addEventListener("click", function(event) {
-        formSubmission(document,faultyItemsList,pilotNameInput,copilotNameInput,fuelLevelInput,cargoMassInput);
+        formSubmission(document, faultyItemsList, pilotNameInput, copilotNameInput, fuelLevelInput, cargoMassInput);
         event.preventDefault();
     });
 });
