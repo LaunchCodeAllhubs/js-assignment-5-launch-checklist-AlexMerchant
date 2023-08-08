@@ -1,4 +1,24 @@
 // Write your JavaScript code here!
+window.addEventListener("load", function() {
+    // Get document elements
+    const launchForm = document.querySelector("form");
+    const submitBtn = document.getElementById("formSubmit");
+    const pilotNameInput = launchForm.elements["pilotName"];
+    const copilotNameInput = launchForm.elements["copilotName"];
+    const fuelLevelInput = launchForm.elements["fuelLevel"];
+    const cargoMassInput = launchForm.elements["cargoMass"];
+
+    // TODO: Create variable to grab "list" per instructions; probably the whole <ol> in the #faultyItems div
+    const faultyItemsList = document.querySelector("ol");
+
+    console.log(launchForm);
+    console.log(submitBtn);
+
+    submitBtn.addEventListener("click", function(event) {
+        formSubmission(document,faultyItemsList,pilotNameInput,copilotNameInput,fuelLevelInput,cargoMassInput);
+        event.preventDefault();
+    });
+});
 
 window.addEventListener("load", function() {
 
