@@ -27,7 +27,12 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-   
+   console.log(document);
+   console.log(list);
+   console.log(pilot);
+   console.log(copilot);
+   console.log(fuelLevel);
+   console.log(cargoLevel);
 }
 
 async function myFetch() {
