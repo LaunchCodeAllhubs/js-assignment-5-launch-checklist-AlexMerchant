@@ -122,9 +122,12 @@ describe ("GRADING DOM MANIPULATION TEST: ", function () {
    })
 
    it ("Script contains calls to appropriate helper functions", function() {
-     expect(script.includes("formSubmission(")).toBeTrue;
-     expect(script.includes("myFetch(")).toBeTrue;
-     expect(script.includes("pickPlanet(")).toBeTrue;
-     expect(script.includes("addDestinatonInfo(")).toBeTrue;
+    //  Added parenthesis to end of tests to fix unit tests, per Carey's instructions in intro video
+     expect(script.includes("formSubmission(")).toBeTrue();
+     expect(script.includes("myFetch(")).toBeTrue();
+     expect(script.includes("pickPlanet(")).toBeTrue();
+
+    //  Per Carey's introduction video, comment out test below due to typos and as it is tested for in grading-fetch.spec.js
+    //  expect(script.includes("addDestinatonInfo(")).toBeTrue();
    })
 });
