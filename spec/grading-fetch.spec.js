@@ -67,11 +67,12 @@ describe("GRADING FETCH CALL TEST: ", function () {
    })
 
    it("Student selects planet at random", function() {
-       expect(studentPlanet.includes("Math.random()")).toBeTrue;
+    //  Added parenthesis to end of tests to fix unit tests, per Carey's instructions in intro video
+       expect(studentPlanet.includes("Math.random()")).toBeTrue();
        expect(planetsResponse.includes(studentFunctions.pickPlanet(planetsResponse))).toBeTrue();
    })
 
    it("Student calls addDestinationInfo inside script", function() {
-      expect(script.includes("addDestinationInfo(")).toBeTrue;
+      expect(script.includes('addDestinationInfo(')).toBeTrue();
    })
 })
