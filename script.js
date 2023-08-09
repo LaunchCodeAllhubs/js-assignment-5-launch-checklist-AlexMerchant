@@ -9,6 +9,8 @@ window.addEventListener("load", function() {
     const cargoMassInput = launchForm.elements["cargoMass"];
 
     const faultyItemsList = document.getElementById("faultyItems");
+
+    // Set visibility hidden on load to pass first DOM Manipulation test which doesn't call formSubmission() function
     faultyItemsList.style.visibility = "hidden";
 
     submitBtn.addEventListener("click", function(event) {
