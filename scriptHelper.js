@@ -100,15 +100,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         }
 
     }
-
-
-
-    // console.log(document);
-    // console.log(list);
-    // console.log(pilot);
-    // console.log(copilot);
-    // console.log(fuelLevel);
-    // console.log(cargoLevel);
 }
 
 async function myFetch() {
@@ -121,6 +112,8 @@ async function myFetch() {
 }
 
 function pickPlanet(planets) {
+    const randomIndex = Math.floor(Math.random() * planets.length);
+    return planets[randomIndex];
 }
 
 module.exports.addDestinationInfo = addDestinationInfo;
